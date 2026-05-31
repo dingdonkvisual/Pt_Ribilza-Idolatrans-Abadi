@@ -1,40 +1,180 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<section class="hero">
 
-<title>IDOLA TRANS | PT Ribilza Idola Trans Abadi</title>
+<div class="hero-content">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+<div class="logo">
+IDOLA <span>TRANS</span>
+</div>
+
+<h1>
+PT RIBILZA IDOLA TRANS ABADI
+</h1>
+
+<p>
+Travel Penumpang, Carter Kendaraan dan Pengiriman Barang Antar Kota & Antar Provinsi Sulawesi
+</p>
+
+<div class="hero-buttons">
+<a href="#booking" class="btn">Pesan Travel</a>
+<a href="#kontak" class="btn">Kirim Barang</a>
+</div>
+
+</div>
+
+<div class="hero-visual">
+
+<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200"
+class="avanza">
+
+<img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800"
+class="cargo">
+
+<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
+class="man">
+
+<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500"
+class="woman">
+
+</div>
+
+</section>
 
 <style>
 
-:root{
---primary:#0057D9;
---secondary:#FFD400;
---danger:#E10600;
---dark:#0f172a;
---light:#ffffff;
+.hero{
+min-height:100vh;
+background:linear-gradient(135deg,#0057D9,#0099ff);
+display:flex;
+align-items:center;
+justify-content:space-between;
+padding:80px;
+overflow:hidden;
+color:white;
+flex-wrap:wrap;
 }
 
-*{
-margin:0;
-padding:0;
-box-sizing:border-box;
-font-family:'Poppins',sans-serif;
-scroll-behavior:smooth;
+.logo{
+font-size:40px;
+font-weight:900;
+color:#FFD400;
+margin-bottom:20px;
 }
 
-body{
-background:#f5f8ff;
+.logo span{
+color:#ffffff;
 }
 
-header{
-position:fixed;
-top:0;
+.hero-content{
+max-width:550px;
+z-index:2;
+}
+
+.hero-content h1{
+font-size:55px;
+font-weight:900;
+line-height:1.2;
+margin-bottom:20px;
+}
+
+.hero-content p{
+font-size:20px;
+margin-bottom:30px;
+}
+
+.btn{
+display:inline-block;
+padding:15px 30px;
+background:#FFD400;
+color:#000;
+font-weight:700;
+text-decoration:none;
+border-radius:12px;
+margin-right:10px;
+}
+
+.hero-visual{
+position:relative;
+width:600px;
+height:500px;
+}
+
+.avanza{
+position:absolute;
+width:520px;
+bottom:0;
+left:40px;
+filter:drop-shadow(0 15px 25px rgba(0,0,0,.3));
+}
+
+.cargo{
+position:absolute;
+width:220px;
+bottom:20px;
+right:0;
+border-radius:15px;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.man{
+position:absolute;
+width:130px;
+height:130px;
+object-fit:cover;
+border-radius:50%;
+left:0;
+top:60px;
+border:5px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+.woman{
+position:absolute;
+width:130px;
+height:130px;
+object-fit:cover;
+border-radius:50%;
+left:100px;
+top:10px;
+border:5px solid white;
+box-shadow:0 10px 25px rgba(0,0,0,.3);
+}
+
+@media(max-width:768px){
+
+.hero{
+padding:120px 20px 50px;
+text-align:center;
+}
+
+.hero-content h1{
+font-size:35px;
+}
+
+.hero-visual{
 width:100%;
-background:rgba(15,23,42,.95);
+height:400px;
+margin-top:30px;
+}
+
+.avanza{
+width:320px;
+left:50%;
+transform:translateX(-50%);
+}
+
+.cargo{
+width:120px;
+}
+
+.man,
+.woman{
+width:80px;
+height:80px;
+}
+
+}
+
+</style>background:rgba(15,23,42,.95);
 backdrop-filter:blur(10px);
 z-index:1000;
 }
