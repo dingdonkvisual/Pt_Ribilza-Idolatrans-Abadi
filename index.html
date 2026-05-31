@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>IDOLA TRANS | PT Ribilza Idola Trans Abadi</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--primary:#0057D9;
+--secondary:#FFD400;
+--danger:#E10600;
+--dark:#0f172a;
+--light:#ffffff;
+}
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#f5f8ff;
+}
+
+header{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,.95);
+backdrop-filter:blur(10px);
+z-index:1000;
+}
+
+nav{
+max-width:1200px;
+margin:auto;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo{
+font-size:30px;
+font-weight:900;
+color:var(--secondary);
+}
+
+.logo span{
+color:white;
+}
+
+nav ul{
+display:flex;
+list-style:none;
+gap:20px;
+}
+
+nav ul li a{
+text-decoration:none;
+color:white;
+font-weight:600;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1920');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+color:white;
+}
+
+.hero h1{
+font-size:65px;
+font-weight:900;
+}
+
+.hero p{
+font-size:20px;
+margin:20px 0;
+}
+
+.btn{
+display:inline-block;
+padding:15px 35px;
+background:var(--secondary);
+color:black;
+text-decoration:none;
+font-weight:700;
+border-radius:10px;
+margin:5px;
+}
+
+section{
+padding:90px 20px;
+}
+
+.container{
+max-width:1200px;
+margin:auto;
+}
+
+.title{
+text-align:center;
+font-size:42px;
+color:var(--primary);
+margin-bottom:50px;
+font-weight:800;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.card{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.card h3{
+color:var(--primary);
+margin-bottom:10px;
+}
+
+.stats{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.stat{
+background:white;
+padding:30px;
+border-radius:20px;
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+}
+
+.stat h2{
+font-size:40px;
+color:var(--primary);
+}
+
+.route-list{
+columns:2;
+font-size:18px;
+line-height:2;
+}
+
+.booking{
+background:var(--primary);
+color:white;
+border-radius:25px;
+padding:40px;
+}
+
+.booking input,
+.booking select{
+width:100%;
+padding:15px;
+margin:10px 0;
+border:none;
+border-radius:10px;
+}
+
+.booking button{
+width:100%;
+padding:15px;
+background:var(--secondary);
+border:none;
+font-size:18px;
+font-weight:700;
+border-radius:10px;
+cursor:pointer;
+}
+
+footer{
+background:var(--dark);
+color:white;
+text-align:center;
+padding:40px;
+}
+
+.whatsapp{
+position:fixed;
+bottom:20px;
+right:20px;
+background:#25D366;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+color:white;
+font-weight:700;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:40px;
+}
+
+nav ul{
+display:none;
+}
+
+.route-list{
+columns:1;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<nav>
+
+<div class="logo">
+IDOLA <span>TRANS</span>
+</div>
+
+<ul>
+<li><a href="#tentang">Tentang</a></li>
+<li><a href="#layanan">Layanan</a></li>
+<li><a href="#rute">Rute</a></li>
+<li><a href="#booking">Booking</a></li>
+<li><a href="#kontak">Kontak</a></li>
+</ul>
+
+</nav>
+</header>
+
+<section class="hero">
+
+<div>
+
+<h1>IDOLA TRANS</h1>
+
+<p>
+PT Ribilza Idola Trans Abadi
+<br>
+Jasa Angkutan Darat Antar Provinsi & Pengiriman Barang
+</p>
+
+<a href="#booking" class="btn">Pesan Tiket</a>
+<a href="#kontak" class="btn">Hubungi Kami</a>
+
+</div>
+
+</section>
+
+<section>
+
+<div class="container">
+
+<div class="stats">
+
+<div class="stat">
+<h2>15+</h2>
+<p>Kota Tujuan</p>
+</div>
+
+<div class="stat">
+<h2>24</h2>
+<p>Jam Pelayanan</p>
+</div>
+
+<div class="stat">
+<h2>1000+</h2>
+<p>Pelanggan</p>
+</div>
+
+<div class="stat">
+<h2>100%</h2>
+<p>Komitmen</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="tentang">
+
+<div class="container">
+
+<h2 class="title">Tentang Kami</h2>
+
+<p style="text-align:center;font-size:18px;">
+PT Ribilza Idola Trans Abadi melayani travel penumpang,
+carter kendaraan dan pengiriman barang ke berbagai wilayah Sulawesi
+dengan pelayanan profesional, aman dan terpercaya.
+</p>
+
+</div>
+
+</section>
+
+<section id="layanan">
+
+<div class="container">
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>🚐 Travel Penumpang</h3>
+<p>Door to Door Service.</p>
+</div>
+
+<div class="card">
+<h3>📦 Pengiriman Barang</h3>
+<p>Paket dan logistik.</p>
+</div>
+
+<div class="card">
+<h3>🚌 Carter Kendaraan</h3>
+<p>Keluarga dan perusahaan.</p>
+</div>
+
+<div class="card">
+<h3>🏭 Antar Jemput Karyawan</h3>
+<p>Kawasan industri dan proyek.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="rute">
+
+<div class="container">
+
+<h2 class="title">Rute Perjalanan</h2>
+
+<div class="card">
+
+<div class="route-list">
+Manado<br>
+Bitung<br>
+Buol<br>
+Kotamobagu<br>
+Toli-Toli<br>
+Palu<br>
+Poso<br>
+Morowali<br>
+Ampana<br>
+Luwuk<br>
+Bahodopi<br>
+Bungku<br>
+Kolaka<br>
+Kendari<br>
+Masamba<br>
+Palopo<br>
+Makassar
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="booking">
+
+<div class="container">
+
+<h2 class="title">Booking Travel</h2>
+
+<div class="booking">
+
+<input type="text" placeholder="Nama Lengkap">
+
+<input type="text" placeholder="Nomor WhatsApp">
+
+<select>
+<option>Kota Asal</option>
+<option>Gorontalo</option>
+<option>Manado</option>
+<option>Makassar</option>
+</select>
+
+<select>
+<option>Kota Tujuan</option>
+<option>Palu</option>
+<option>Luwuk</option>
+<option>Makassar</option>
+</select>
+
+<input type="date">
+
+<button>Kirim Booking</button>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="kontak">
+
+<div class="container">
+
+<h2 class="title">Kontak Agen</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>Gorontalo</h3>
+0852-9970-4323
+</div>
+
+<div class="card">
+<h3>Manado</h3>
+0853-4050-0066
+</div>
+
+<div class="card">
+<h3>Bolmut</h3>
+0853-3873-1121
+</div>
+
+<div class="card">
+<h3>Makassar</h3>
+0858-2333-2207
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<h2>IDOLA TRANS</h2>
+
+<p>
+PT Ribilza Idola Trans Abadi
+</p>
+
+<p>
+Keamanan dan Kenyamanan Anda Adalah Prioritas Kami
+</p>
+
+</footer>
+
+<a href="https://wa.me/6285299704323" class="whatsapp">
+WhatsApp
+</a>
+
+</body>
+</html>
