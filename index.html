@@ -1,219 +1,70 @@
-<section class="hero">
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<div class="hero-content">
+<title>PT. Ribilza Idola Trans Abadi</title>
 
-<div class="logo">
-IDOLA <span>TRANS</span>
-</div>
-
-<h1>
-PT RIBILZA IDOLA TRANS ABADI
-</h1>
-
-<p>
-Travel Penumpang, Carter Kendaraan dan Pengiriman Barang Antar Kota & Antar Provinsi Sulawesi
-</p>
-
-<div class="hero-buttons">
-<a href="#booking" class="btn">Pesan Travel</a>
-<a href="#kontak" class="btn">Kirim Barang</a>
-</div>
-
-</div>
-
-<div class="hero-visual">
-
-<img src="https://images.unsplash.com/photo-1549399542-7e3f8b79c341?w=1200"
-class="avanza">
-
-<img src="https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=800"
-class="cargo">
-
-<img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=500"
-class="man">
-
-<img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=500"
-class="woman">
-
-</div>
-
-</section>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 <style>
 
-.hero{
-min-height:100vh;
-background:linear-gradient(135deg,#0057D9,#0099ff);
-display:flex;
-align-items:center;
-justify-content:space-between;
-padding:80px;
-overflow:hidden;
-color:white;
-flex-wrap:wrap;
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
 }
 
-.logo{
-font-size:40px;
-font-weight:900;
-color:#FFD400;
-margin-bottom:20px;
+body{
+background:#041a38;
+color:#fff;
+overflow-x:hidden;
 }
 
-.logo span{
-color:#ffffff;
-}
-
-.hero-content{
-max-width:550px;
-z-index:2;
-}
-
-.hero-content h1{
-font-size:55px;
-font-weight:900;
-line-height:1.2;
-margin-bottom:20px;
-}
-
-.hero-content p{
-font-size:20px;
-margin-bottom:30px;
-}
-
-.btn{
-display:inline-block;
-padding:15px 30px;
-background:#FFD400;
-color:#000;
-font-weight:700;
-text-decoration:none;
-border-radius:12px;
-margin-right:10px;
-}
-
-.hero-visual{
-position:relative;
-width:600px;
-height:500px;
-}
-
-.avanza{
-position:absolute;
-width:520px;
-bottom:0;
-left:40px;
-filter:drop-shadow(0 15px 25px rgba(0,0,0,.3));
-}
-
-.cargo{
-position:absolute;
-width:220px;
-bottom:20px;
-right:0;
-border-radius:15px;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-}
-
-.man{
-position:absolute;
-width:130px;
-height:130px;
-object-fit:cover;
-border-radius:50%;
+header{
+position:fixed;
+top:0;
 left:0;
-top:60px;
-border:5px solid white;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-}
-
-.woman{
-position:absolute;
-width:130px;
-height:130px;
-object-fit:cover;
-border-radius:50%;
-left:100px;
-top:10px;
-border:5px solid white;
-box-shadow:0 10px 25px rgba(0,0,0,.3);
-}
-
-@media(max-width:768px){
-
-.hero{
-padding:120px 20px 50px;
-text-align:center;
-}
-
-.hero-content h1{
-font-size:35px;
-}
-
-.hero-visual{
 width:100%;
-height:400px;
-margin-top:30px;
-}
-
-.avanza{
-width:320px;
-left:50%;
-transform:translateX(-50%);
-}
-
-.cargo{
-width:120px;
-}
-
-.man,
-.woman{
-width:80px;
-height:80px;
-}
-
-}
-
-</style>background:rgba(15,23,42,.95);
+background:rgba(0,0,0,.7);
 backdrop-filter:blur(10px);
-z-index:1000;
-}
-
-nav{
-max-width:1200px;
-margin:auto;
+padding:15px 8%;
 display:flex;
 justify-content:space-between;
 align-items:center;
-padding:15px 20px;
+z-index:999;
 }
 
 .logo{
-font-size:30px;
-font-weight:900;
-color:var(--secondary);
+font-size:28px;
+font-weight:800;
+color:#ffd400;
 }
 
 .logo span{
-color:white;
+color:#fff;
 }
 
-nav ul{
-display:flex;
-list-style:none;
-gap:20px;
-}
-
-nav ul li a{
+nav a{
 text-decoration:none;
 color:white;
+margin-left:25px;
 font-weight:600;
+transition:.3s;
+}
+
+nav a:hover{
+color:#ffd400;
 }
 
 .hero{
 height:100vh;
-background:linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
-url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc?q=80&w=1920');
+background:
+linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1502741338009-cac2772e18bc');
 background-size:cover;
 background-position:center;
 display:flex;
@@ -221,148 +72,240 @@ align-items:center;
 justify-content:center;
 text-align:center;
 padding:20px;
-color:white;
 }
 
-.hero h1{
-font-size:65px;
-font-weight:900;
+.hero-content h1{
+font-size:60px;
+font-weight:800;
+margin-bottom:20px;
 }
 
-.hero p{
-font-size:20px;
-margin:20px 0;
+.hero-content p{
+font-size:22px;
+margin-bottom:30px;
 }
 
 .btn{
 display:inline-block;
 padding:15px 35px;
-background:var(--secondary);
-color:black;
+background:#ffd400;
+color:#000;
 text-decoration:none;
 font-weight:700;
-border-radius:10px;
-margin:5px;
+border-radius:50px;
+margin:10px;
+transition:.3s;
 }
 
-section{
-padding:90px 20px;
+.btn:hover{
+transform:translateY(-4px);
 }
 
-.container{
-max-width:1200px;
-margin:auto;
+.section{
+padding:90px 8%;
 }
 
 .title{
 text-align:center;
 font-size:42px;
-color:var(--primary);
 margin-bottom:50px;
-font-weight:800;
+color:#ffd400;
 }
 
-.cards{
+.about{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:40px;
+align-items:center;
+}
+
+.about img{
+width:100%;
+border-radius:20px;
+}
+
+.about-text p{
+line-height:1.8;
+font-size:17px;
+}
+
+.services{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
 gap:25px;
 }
 
 .card{
-background:white;
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(10px);
 padding:30px;
 border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
+text-align:center;
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-10px);
 }
 
 .card h3{
-color:var(--primary);
-margin-bottom:10px;
+margin:15px 0;
+color:#ffd400;
+}
+
+.routes{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.route-box{
+background:#0c2d63;
+padding:25px;
+border-radius:20px;
+}
+
+.route-box h3{
+color:#ffd400;
+margin-bottom:15px;
+}
+
+.route-box ul{
+list-style:none;
+line-height:2;
 }
 
 .stats{
 display:grid;
-grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+grid-template-columns:repeat(4,1fr);
 gap:20px;
 text-align:center;
 }
 
 .stat{
-background:white;
+background:#0a2754;
 padding:30px;
 border-radius:20px;
-box-shadow:0 10px 25px rgba(0,0,0,.08);
 }
 
 .stat h2{
 font-size:40px;
-color:var(--primary);
+color:#ffd400;
 }
 
-.route-list{
-columns:2;
-font-size:18px;
-line-height:2;
+.agents{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:25px;
+}
+
+.agent{
+background:#0a2754;
+padding:25px;
+border-radius:20px;
+}
+
+.agent h3{
+color:#ffd400;
+margin-bottom:10px;
+}
+
+.gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+}
+
+.gallery img{
+width:100%;
+height:220px;
+object-fit:cover;
+border-radius:20px;
+}
+
+.testimonials{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+gap:20px;
+}
+
+.testi{
+background:#0a2754;
+padding:25px;
+border-radius:20px;
 }
 
 .booking{
-background:var(--primary);
-color:white;
-border-radius:25px;
-padding:40px;
+max-width:800px;
+margin:auto;
+}
+
+.booking form{
+display:grid;
+gap:15px;
 }
 
 .booking input,
-.booking select{
-width:100%;
+.booking textarea{
 padding:15px;
-margin:10px 0;
 border:none;
 border-radius:10px;
 }
 
 .booking button{
-width:100%;
 padding:15px;
-background:var(--secondary);
+background:#ffd400;
 border:none;
-font-size:18px;
 font-weight:700;
 border-radius:10px;
 cursor:pointer;
 }
 
+.map{
+height:400px;
+border-radius:20px;
+overflow:hidden;
+}
+
 footer{
-background:var(--dark);
-color:white;
-text-align:center;
+background:#021126;
 padding:40px;
+text-align:center;
 }
 
 .whatsapp{
 position:fixed;
-bottom:20px;
-right:20px;
-background:#25D366;
-padding:15px 20px;
-border-radius:50px;
+bottom:25px;
+right:25px;
+background:#25d366;
+width:65px;
+height:65px;
+border-radius:50%;
+display:flex;
+justify-content:center;
+align-items:center;
+font-size:32px;
 text-decoration:none;
 color:white;
-font-weight:700;
+z-index:999;
 }
 
 @media(max-width:768px){
 
-.hero h1{
-font-size:40px;
+.hero-content h1{
+font-size:36px;
 }
 
-nav ul{
+.about{
+grid-template-columns:1fr;
+}
+
+.stats{
+grid-template-columns:1fr 1fr;
+}
+
+nav{
 display:none;
-}
-
-.route-list{
-columns:1;
 }
 
 }
@@ -373,45 +316,103 @@ columns:1;
 <body>
 
 <header>
-<nav>
 
 <div class="logo">
 IDOLA <span>TRANS</span>
 </div>
 
-<ul>
-<li><a href="#tentang">Tentang</a></li>
-<li><a href="#layanan">Layanan</a></li>
-<li><a href="#rute">Rute</a></li>
-<li><a href="#booking">Booking</a></li>
-<li><a href="#kontak">Kontak</a></li>
-</ul>
-
+<nav>
+<a href="#home">Beranda</a>
+<a href="#about">Tentang</a>
+<a href="#service">Layanan</a>
+<a href="#route">Rute</a>
+<a href="#agent">Agen</a>
+<a href="#contact">Kontak</a>
 </nav>
+
 </header>
 
-<section class="hero">
+<section class="hero" id="home">
 
-<div>
+<div class="hero-content">
 
-<h1>IDOLA TRANS</h1>
+<h1>PT. RIBILZA IDOLA TRANS ABADI</h1>
 
 <p>
-PT Ribilza Idola Trans Abadi
-<br>
 Jasa Angkutan Darat Antar Provinsi & Pengiriman Barang
 </p>
 
-<a href="#booking" class="btn">Pesan Tiket</a>
-<a href="#kontak" class="btn">Hubungi Kami</a>
+<a href="https://wa.me/6285299704323" class="btn">
+Hubungi Kami
+</a>
+
+<a href="#route" class="btn">
+Lihat Rute
+</a>
 
 </div>
 
 </section>
 
-<section>
+<section class="section" id="about">
 
-<div class="container">
+<h2 class="title">Tentang Kami</h2>
+
+<div class="about">
+
+<img src="https://images.unsplash.com/photo-1565043589221-1a6fd9ae45c7">
+
+<div class="about-text">
+
+<p>
+PT. Ribilza Idola Trans Abadi merupakan perusahaan transportasi darat yang melayani perjalanan antar provinsi dan pengiriman barang ke berbagai wilayah Sulawesi.
+</p>
+
+<br>
+
+<p>
+Keamanan dan kenyamanan pelanggan adalah prioritas utama kami.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+<section class="section" id="service">
+
+<h2 class="title">Layanan Kami</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Travel Umum</h3>
+<p>Melayani penumpang antar provinsi.</p>
+</div>
+
+<div class="card">
+<h3>Pengiriman Barang</h3>
+<p>Pengiriman cepat dan aman.</p>
+</div>
+
+<div class="card">
+<h3>Carter Kendaraan</h3>
+<p>Untuk keluarga dan perusahaan.</p>
+</div>
+
+<div class="card">
+<h3>Layanan Korporasi</h3>
+<p>Kerjasama instansi dan perusahaan.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Statistik</h2>
 
 <div class="stats">
 
@@ -421,175 +422,143 @@ Jasa Angkutan Darat Antar Provinsi & Pengiriman Barang
 </div>
 
 <div class="stat">
-<h2>24</h2>
-<p>Jam Pelayanan</p>
-</div>
-
-<div class="stat">
-<h2>1000+</h2>
+<h2>5000+</h2>
 <p>Pelanggan</p>
 </div>
 
 <div class="stat">
-<h2>100%</h2>
-<p>Komitmen</p>
+<h2>10+</h2>
+<p>Armada</p>
 </div>
 
-</div>
-
-</div>
-
-</section>
-
-<section id="tentang">
-
-<div class="container">
-
-<h2 class="title">Tentang Kami</h2>
-
-<p style="text-align:center;font-size:18px;">
-PT Ribilza Idola Trans Abadi melayani travel penumpang,
-carter kendaraan dan pengiriman barang ke berbagai wilayah Sulawesi
-dengan pelayanan profesional, aman dan terpercaya.
-</p>
-
-</div>
-
-</section>
-
-<section id="layanan">
-
-<div class="container">
-
-<h2 class="title">Layanan Kami</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>🚐 Travel Penumpang</h3>
-<p>Door to Door Service.</p>
-</div>
-
-<div class="card">
-<h3>📦 Pengiriman Barang</h3>
-<p>Paket dan logistik.</p>
-</div>
-
-<div class="card">
-<h3>🚌 Carter Kendaraan</h3>
-<p>Keluarga dan perusahaan.</p>
-</div>
-
-<div class="card">
-<h3>🏭 Antar Jemput Karyawan</h3>
-<p>Kawasan industri dan proyek.</p>
-</div>
-
+<div class="stat">
+<h2>24/7</h2>
+<p>Pelayanan</p>
 </div>
 
 </div>
 
 </section>
 
-<section id="rute">
-
-<div class="container">
+<section class="section" id="route">
 
 <h2 class="title">Rute Perjalanan</h2>
 
-<div class="card">
+<div class="routes">
 
-<div class="route-list">
-Manado<br>
-Bitung<br>
-Buol<br>
-Kotamobagu<br>
-Toli-Toli<br>
-Palu<br>
-Poso<br>
-Morowali<br>
-Ampana<br>
-Luwuk<br>
-Bahodopi<br>
-Bungku<br>
-Kolaka<br>
-Kendari<br>
-Masamba<br>
-Palopo<br>
-Makassar
+<div class="route-box">
+<h3>Sulawesi Utara</h3>
+<ul>
+<li>Manado</li>
+<li>Bitung</li>
+<li>Kotamobagu</li>
+<li>Buol</li>
+<li>Toli-Toli</li>
+</ul>
 </div>
 
+<div class="route-box">
+<h3>Sulawesi Tengah</h3>
+<ul>
+<li>Palu</li>
+<li>Poso</li>
+<li>Morowali</li>
+<li>Ampana</li>
+<li>Luwuk</li>
+</ul>
+</div>
+
+<div class="route-box">
+<h3>Sulawesi Tenggara</h3>
+<ul>
+<li>Kolaka</li>
+<li>Kendari</li>
+<li>Bahodopi</li>
+<li>Bungku</li>
+</ul>
+</div>
+
+<div class="route-box">
+<h3>Sulawesi Selatan</h3>
+<ul>
+<li>Masamba</li>
+<li>Palopo</li>
+<li>Mangkutana</li>
+<li>Makassar</li>
+</ul>
 </div>
 
 </div>
 
 </section>
 
-<section id="booking">
+<section class="section" id="agent">
 
-<div class="container">
+<h2 class="title">Agen Kami</h2>
 
-<h2 class="title">Booking Travel</h2>
+<div class="agents">
+
+<div class="agent">
+<h3>Gorontalo</h3>
+<p>0852-9970-4323</p>
+<p>0852-2035-2684</p>
+</div>
+
+<div class="agent">
+<h3>Manado</h3>
+<p>0853-4050-0066</p>
+</div>
+
+<div class="agent">
+<h3>Bolmut</h3>
+<p>0853-3873-1121</p>
+<p>0812-4850-8035</p>
+</div>
+
+<div class="agent">
+<h3>Makassar</h3>
+<p>0858-2333-2207</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="section">
+
+<h2 class="title">Galeri Armada</h2>
+
+<div class="gallery">
+
+<img src="https://images.unsplash.com/photo-1544620347-c4fd4a3d5957">
+<img src="https://images.unsplash.com/photo-1503376780353-7e6692767b70">
+<img src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c">
+
+</div>
+
+</section>
+
+<section class="section" id="contact">
+
+<h2 class="title">Form Pemesanan</h2>
 
 <div class="booking">
 
-<input type="text" placeholder="Nama Lengkap">
+<form>
+
+<input type="text" placeholder="Nama">
 
 <input type="text" placeholder="Nomor WhatsApp">
 
-<select>
-<option>Kota Asal</option>
-<option>Gorontalo</option>
-<option>Manado</option>
-<option>Makassar</option>
-</select>
+<input type="text" placeholder="Tujuan">
 
-<select>
-<option>Kota Tujuan</option>
-<option>Palu</option>
-<option>Luwuk</option>
-<option>Makassar</option>
-</select>
+<textarea rows="5" placeholder="Pesan"></textarea>
 
-<input type="date">
+<button type="submit">
+Kirim Pemesanan
+</button>
 
-<button>Kirim Booking</button>
-
-</div>
-
-</div>
-
-</section>
-
-<section id="kontak">
-
-<div class="container">
-
-<h2 class="title">Kontak Agen</h2>
-
-<div class="cards">
-
-<div class="card">
-<h3>Gorontalo</h3>
-0852-9970-4323
-</div>
-
-<div class="card">
-<h3>Manado</h3>
-0853-4050-0066
-</div>
-
-<div class="card">
-<h3>Bolmut</h3>
-0853-3873-1121
-</div>
-
-<div class="card">
-<h3>Makassar</h3>
-0858-2333-2207
-</div>
-
-</div>
+</form>
 
 </div>
 
@@ -597,20 +566,23 @@ Makassar
 
 <footer>
 
-<h2>IDOLA TRANS</h2>
-
-<p>
-PT Ribilza Idola Trans Abadi
-</p>
+<h3>PT. Ribilza Idola Trans Abadi</h3>
 
 <p>
 Keamanan dan Kenyamanan Anda Adalah Prioritas Kami
 </p>
 
+<br>
+
+<p>
+© 2026 All Rights Reserved
+</p>
+
 </footer>
 
-<a href="https://wa.me/6285299704323" class="whatsapp">
-WhatsApp
+<a class="whatsapp"
+href="https://wa.me/6285299704323">
+☎
 </a>
 
 </body>
